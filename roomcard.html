@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .room-card {
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: #ffffff;
+            border: 1px solid #ddd;
+            transition: transform 0.2s ease;
+        }
+
+        .room-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .room-header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .room-header h3 {
+            margin: 0;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .room-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .room-type {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .room-price {
+            font-size: 18px;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Royal Hotel</h1>
+
+    <div class="cards-container">
+        <!-- Room Card 1 -->
+        <div class="room-card">
+            <div class="room-header">
+                <h3>ROOM: 101</h3>
+            </div>
+            <div class="room-body">
+                <p class="room-type"><strong>TYPE:</strong> SINGLE</p>
+                <p class="room-price"><strong>PRICE:</strong> €80/night</p>
+            </div>
+        </div>
+
+        <!-- Room Card 2 -->
+        <div class="room-card">
+            <div class="room-header">
+                <h3>ROOM: 205</h3>
+            </div>
+            <div class="room-body">
+                <p class="room-type"><strong>TYPE:</strong> DOUBLE</p>
+                <p class="room-price"><strong>PRICE:</strong> €120/night</p>
+            </div>
+        </div>
+
+        <!-- Room Card 3 -->
+        <div class="room-card">
+            <div class="room-header">
+                <h3>ROOM: 312</h3>
+            </div>
+            <div class="room-body">
+                <p class="room-type"><strong>TYPE:</strong> SUITE</p>
+                <p class="room-price"><strong>PRICE:</strong> €190/night</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
